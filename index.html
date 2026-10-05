@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaaS Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">DK</div>
+          <div>
+            <div class="brand-title">SaaS</div>
+            <div class="brand-subtitle">Dashboard</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <div class="nav-section">
+            <p class="nav-label">Overview</p>
+            <a class="nav-item active" href="#">
+              <span class="icon">▣</span>
+              Dashboard
+            </a>
+            <a class="nav-item" href="#">
+              <span class="icon">◎</span>
+              Customers
+            </a>
+            <a class="nav-item" href="#">
+              <span class="icon">◫</span>
+              Invoices
+            </a>
+            <a class="nav-item" href="#">
+              <span class="icon">◍</span>
+              Expenses
+            </a>
+            <a class="nav-item" href="#">
+              <span class="icon">△</span>
+              Statistics
+            </a>
+          </div>
+
+          <div class="nav-section">
+            <p class="nav-label">Management</p>
+            <a class="nav-item" href="#">
+              <span class="icon">◌</span>
+              Analytics
+            </a>
+            <a class="nav-item" href="#">
+              <span class="icon">◈</span>
+              Reports
+            </a>
+            <a class="nav-item" href="#">
+              <span class="icon">⚙</span>
+              Settings
+            </a>
+          </div>
+        </nav>
+
+        <div class="upgrade-card">
+          <div class="upgrade-glow"></div>
+          <p class="upgrade-title">Upgrade plan</p>
+          <p class="upgrade-copy">Unlock advanced forecasting and AI insights.</p>
+          <button>Upgrade</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Good morning, DDKingdom</p>
+            <h1>Dashboard</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <div class="search-box">
+              <span>⌕</span>
+              <input type="text" placeholder="Search" aria-label="Search" />
+            </div>
+            <button class="action-button ghost">Export</button>
+            <button class="action-button primary">+ New report</button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
+              <span class="theme-icon">☀️</span>
+            </button>
+            <div class="avatar-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Profile" />
+            </div>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="metric-card accent-purple">
+            <div class="metric-top">
+              <span class="metric-label">Dashboard revenue</span>
+              <span class="metric-trend positive">+12.4%</span>
+            </div>
+            <h2>$84,260</h2>
+            <div class="mini-chart">
+              <span style="--h: 35%"></span>
+              <span style="--h: 52%"></span>
+              <span style="--h: 44%"></span>
+              <span style="--h: 62%"></span>
+              <span style="--h: 75%"></span>
+              <span style="--h: 68%"></span>
+              <span style="--h: 90%"></span>
+            </div>
+          </article>
+
+          <article class="metric-card accent-blue">
+            <div class="metric-top">
+              <span class="metric-label">Customers</span>
+              <span class="metric-trend positive">+8.2%</span>
+            </div>
+            <h2>24,840</h2>
+            <div class="mini-chart bars-compact">
+              <span style="--h: 30%"></span>
+              <span style="--h: 50%"></span>
+              <span style="--h: 45%"></span>
+              <span style="--h: 65%"></span>
+              <span style="--h: 72%"></span>
+              <span style="--h: 80%"></span>
+            </div>
+          </article>
+
+          <article class="metric-card accent-green">
+            <div class="metric-top">
+              <span class="metric-label">Invoices</span>
+              <span class="metric-trend positive">+3.1%</span>
+            </div>
+            <h2>$42,900</h2>
+            <div class="progress-ring" aria-label="Invoice coverage rate">
+              <div class="ring-inner">81%</div>
+            </div>
+          </article>
+
+          <article class="metric-card accent-orange">
+            <div class="metric-top">
+              <span class="metric-label">Expenses</span>
+              <span class="metric-trend negative">-1.8%</span>
+            </div>
+            <h2>$9,760</h2>
+            <div class="sparkline">
+              <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                <path d="M0 45 C30 42, 42 25, 70 32 S120 10, 160 20 S190 12, 200 18" />
+              </svg>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel revenue-panel">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Dashboard</p>
+                <h3>Revenue overview</h3>
+              </div>
+              <div class="segmented-control">
+                <button class="active">7D</button>
+                <button>1M</button>
+                <button>1Y</button>
+              </div>
+            </div>
+
+            <div class="chart-wrap">
+              <div class="y-axis">
+                <span>80k</span>
+                <span>60k</span>
+                <span>40k</span>
+                <span>20k</span>
+              </div>
+
+              <div class="chart-area">
+                <div class="grid-lines"></div>
+                <svg viewBox="0 0 620 260" preserveAspectRatio="none" aria-label="Revenue chart">
+                  <defs>
+                    <linearGradient id="lineFill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#7c6af6" stop-opacity="0.35" />
+                      <stop offset="100%" stop-color="#7c6af6" stop-opacity="0.02" />
+                    </linearGradient>
+                  </defs>
+                  <path class="area" d="M0,180 C60,155 90,80 140,100 S210,40 260,90 S330,150 390,110 S500,70 620,88 L620,260 L0,260 Z" />
+                  <path class="line" d="M0,180 C60,155 90,80 140,100 S210,40 260,90 S330,150 390,110 S500,70 620,88" />
+                </svg>
+                <div class="chart-points">
+                  <span class="point p1"></span>
+                  <span class="point p2"></span>
+                  <span class="point p3"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="x-axis">
+              <span>Jan</span>
+              <span>Feb</span>
+              <span>Mar</span>
+              <span>Apr</span>
+              <span>May</span>
+              <span>Jun</span>
+              <span>Jul</span>
+            </div>
+          </article>
+
+          <article class="panel stats-panel">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Statistics</p>
+                <h3>Today at a glance</h3>
+              </div>
+              <button class="text-button">Insights</button>
+            </div>
+
+            <ul class="stat-list">
+              <li>
+                <span>Monthly growth</span>
+                <strong>+28.4%</strong>
+              </li>
+              <li>
+                <span>Conversion rate</span>
+                <strong>6.84%</strong>
+              </li>
+              <li>
+                <span>Churn risk</span>
+                <strong>2.1%</strong>
+              </li>
+              <li>
+                <span>Retention</span>
+                <strong>91.2%</strong>
+              </li>
+            </ul>
+
+            <div class="mini-radial" aria-label="Efficiency performance">
+              <div class="ring-label">
+                <span>81%</span>
+                <small>Efficiency</small>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel customer-panel">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Customers</p>
+                <h3>Active accounts</h3>
+              </div>
+              <button class="text-button">Manage</button>
+            </div>
+
+            <ul class="customer-list">
+              <li>
+                <div class="customer-info">
+                  <span class="avatar small">AL</span>
+                  <div>
+                    <strong>Alicia Lee</strong>
+                    <small>Growth plan</small>
+                  </div>
+                </div>
+                <span class="value">$2.4k</span>
+              </li>
+              <li>
+                <div class="customer-info">
+                  <span class="avatar small alt">MB</span>
+                  <div>
+                    <strong>Marcus Bell</strong>
+                    <small>Enterprise</small>
+                  </div>
+                </div>
+                <span class="value">$4.9k</span>
+              </li>
+              <li>
+                <div class="customer-info">
+                  <span class="avatar small green">SD</span>
+                  <div>
+                    <strong>Sarah Diaz</strong>
+                    <small>Starter</small>
+                  </div>
+                </div>
+                <span class="value">$870</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel invoice-panel">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Invoices</p>
+                <h3>Recent billing</h3>
+              </div>
+              <button class="text-button">View all</button>
+            </div>
+
+            <table class="invoice-table">
+              <thead>
+                <tr>
+                  <th>Client</th>
+                  <th>Due</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Northstar Labs</td>
+                  <td>$3,800</td>
+                  <td><span class="badge success">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>Nova Studio</td>
+                  <td>$2,150</td>
+                  <td><span class="badge pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Clearpath</td>
+                  <td>$1,920</td>
+                  <td><span class="badge failed">Late</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <section class="panel expenses-panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Expenses</p>
+              <h3>Spending overview</h3>
+            </div>
+            <button class="text-button">This month</button>
+          </div>
+
+          <div class="expense-list">
+            <div class="expense-item">
+              <div class="expense-meta">
+                <span>Operations</span>
+                <strong>$3,180</strong>
+              </div>
+              <div class="goal-track"><i style="width:68%"></i></div>
+            </div>
+            <div class="expense-item">
+              <div class="expense-meta">
+                <span>Marketing</span>
+                <strong>$2,640</strong>
+              </div>
+              <div class="goal-track"><i style="width:56%"></i></div>
+            </div>
+            <div class="expense-item">
+              <div class="expense-meta">
+                <span>Infrastructure</span>
+                <strong>$1,940</strong>
+              </div>
+              <div class="goal-track"><i style="width:45%"></i></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
